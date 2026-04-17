@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عيادة إمام للأسنان — ابتسامتك تستاهل الأفضل</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SVG DEFS -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="molar" viewBox="0 0 64 64"><path d="M20 52c0-4 1-9 2.5-14C24 33 25 28 25 24c0-5-1.5-8-3-10C20.5 12 20 10.5 20 9c0-4.5 4-7 8-7 2.5 0 4 1.2 4 3s1.5 3 4 3 3.5-1.2 4-3 1.5-3 4-3c4 0 8 2.5 8 7 0 1.5-.5 3-2 5-1.5 2-3 5-3 10 0 4 1 9 2.5 14S52 48 52 52c0 4-2 10-6 10s-5-4-6-8c-.6-2.4-1.5-4-2-4h-12c-.5 0-1.4 1.6-2 4-1 4-2 8-6 8s-6-6-6-10z"/></symbol>
+    <symbol id="star" viewBox="0 0 20 20"><path d="M10 1.5l2.47 5.01L18 7.27l-4 3.9.94 5.51L10 14.14l-4.94 2.54L6 11.17l-4-3.9 5.53-.76z"/></symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="13" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="icon-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></symbol>
+    <symbol id="icon-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5"/></symbol>
+    <symbol id="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></symbol>
+  </svg>
+
+  <!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-brand">
+    <i class="fa-solid fa-tooth fa-5x"></i>
+    <span>عيادة إمام</span>
+  </div>
+</div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+<a href="#" class="logo">
+  <i class="fa-solid fa-tooth"></i>
+  <div class="logo-text-wrap">
+    <span class="logo-name">EMAM</span>
+    <span class="logo-sub">عيادة أسنان</span>
+  </div>
+</a>      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#intro">الرئيسية</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#gallery">الصور</a></li>
+          <li><a href="#about">عن الدكتور</a></li>
+          <li><a href="#testimonials">آراء المرضى</a></li>
+          <li><a href="#contact" class="btn-info">احجز الآن</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="الوضع الليلي">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" aria-label="القائمة"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#intro">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#gallery">الصور</a>
+    <a href="#about">عن الدكتور</a>
+    <a href="#testimonials">آراء المرضى</a>
+    <a href="#contact" class="btn-primary">احجز الآن</a>
+  </div>
+
+  <!-- ===== HERO — DARK BANNER ===== -->
+  <section class="hero">
+    <div class="hero-bg-image">
+      <!-- 🖼️ صورة خلفية الهيرو — صورة كرسي أسنان أو العيادة (عريضة) -->
+      <img src="dentist-hero.png" alt="عيادة رويال للأسنان" />
+    </div>
+    <div class="container">
+      <h1>ابتسامتك تستاهل<br> <em></em></h1>
+      <p>رعاية شخصية لأسنانك بأحدث الأجهزة وبأسعار مناسبة. راحتك أولويتنا من أول زيارة.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">احجز موعدك</a>
+        <a href="#services" class="btn-outline-hero">تعرّف على خدماتنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTRO — OVERLAPPING IMAGES + TEXT ===== -->
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro-images reveal">
+        <!-- 🖼️ صورة 1 — العيادة من الداخل أو الكرسي -->
+        <div class="intro-img intro-img-1">
+          <div class="img-placeholder">
+            <img src="images/Clinic2.jpg">
+          </div>
+        </div>
+        <!-- 🖼️ صورة 2 — صورة تانية (كرسي / أجهزة / الدكتور شغال) -->
+        <div class="intro-img intro-img-2">
+          <div class="img-placeholder">
+          <img src="images/Clinic1.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="intro-content reveal">
+        <div class="section-label">عيادة إمام</div>
+        <h2 class="section-title"> رحلتك إلى ابتسامه مشرقة تبدا الآن</h2>
+        <div class="intro-divider"></div>
+        <p class="section-desc">ابتسامتك بتعبر عن ثقتك بنفسك، وصحة أسنانك جزء أساسي من صحتك العامة. في عيادة إمام  بنقدم رعاية شخصية لكل مريض — بنسمعك، بنشرحلك، وبنعالجك بأحدث الأساليب. هدفنا إنك تطلع مرتاح ومبسوط من أول زيارة.</p>
+        <a href="#about" class="btn-outline-blue">اعرف أكتر عن الدكتور</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-item reveal"><div class="stat-number" data-count="2000" data-suffix="+">٠</div><div class="stat-label">مريض تم علاجه</div></div>
+      <div class="stat-item reveal"><div class="stat-number" data-count="5">٠</div><div class="stat-label">سنوات خبرة</div></div>
+      <div class="stat-item reveal"><div class="stat-number" data-count="8">٠</div><div class="stat-label">خدمات متنوعة</div></div>
+      <div class="stat-item reveal"><div class="stat-number" data-count="96" data-suffix="٪">٠</div><div class="stat-label">نسبة رضا المرضى</div></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="section-label">خدماتنا</div>
+        <h2 class="section-title">كل اللي أسنانك محتاجاه</h2>
+        <p class="section-desc">من الكشف الدوري لحد التجميل — كل الخدمات بأحدث الأجهزة وبأسعار مناسبة.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><div class="service-icon">🪥</div><h3>كشف وتنظيف</h3><p>فحص شامل، تنظيف جير، وخطة علاج مخصصة. الوقاية أهم من العلاج.</p></div>
+        <div class="service-card reveal"><div class="service-icon">✨</div><h3>تبييض الأسنان</h3><p>جلسات تبييض آمنة بنتائج واضحة من أول زيارة.</p></div>
+        <div class="service-card reveal"><div class="service-icon">🦷</div><h3>حشوات تجميلية</h3><p>حشوات بلون الأسنان الطبيعي — مش هتفرق عن الأصلية.</p></div>
+        <div class="service-card reveal"><div class="service-icon">👑</div><h3>تركيبات وتيجان</h3><p>تيجان وكباري ثابتة بخامات عالية الجودة لكل حالة.</p></div>
+        <div class="service-card reveal"><div class="service-icon">🔧</div><h3>خلع وجراحة</h3><p>خلع عادي وجراحي بأقل ألم ممكن مع متابعة.</p></div>
+        <div class="service-card reveal"><div class="service-icon">👶</div><h3>أسنان الأطفال</h3><p>تعامل خاص مع الأطفال علشان يحبوا زيارة الدكتور.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <div class="section-label">معرض الصور</div>
+        <h2 class="section-title">من داخل العيادة</h2>
+        <p class="section-desc">شوف العيادة والأجهزة — علشان تطمن قبل ما تيجي.</p>
+      </div>
+      <div class="gallery-grid">
+        <!-- 🖼️ صورة كبيرة — العيادة أو قبل وبعد -->
+        <div class="gallery-item reveal"><img src="/images/big-cover.jpg"></div>
+        <!-- 🖼️ صورة 2 -->
+        <div class="gallery-item reveal"><div class="img-placeholder"><img src="/images/big2.jpg"></div></div>
+        <!-- 🖼️ صورة 3 -->
+        <div class="gallery-item reveal"><div class="img-placeholder"><img src="/images/big-3.jpg"></div></div>
+        <!-- 🖼️ صورة 4 -->
+        <div class="gallery-item reveal"><div class="img-placeholder"><img src="/images/big-5.jpg"></div></div>
+        <!-- 🖼️ صورة 5 -->
+        <div class="gallery-item reveal"><div class="img-placeholder"><img src="/images/big-4.jpg"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image reveal">
+        <div class="about-image-inner">
+          <!-- 🖼️ صورة بورتريه للدكتور -->
+          <div class="img-placeholder">
+            <svg><use href="#icon-camera"/></svg>
+            <span><img src="images/dentist-hero.png"></span>
+          </div>
+        </div>
+        <div class="about-badge"><strong>٥</strong><span>سنوات<br>خبرة</span></div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-label">عن الدكتور</div>
+        <h2 class="section-title">رعاية شخصية مش مجرد علاج</h2>
+        <p class="section-desc">عيادة إمام أسسها دكتور متخصص بخبرة ٥ سنوات. كل مريض بالنسبالنا حالة فريدة — بناخد وقتنا في الشرح والعلاج علشان تطلع مرتاح ومطمن.</p>
+        <div class="about-features">
+          <div class="about-feature"><div class="about-feature-icon">🔬</div><div><strong>أجهزة حديثة</strong><span>أشعة رقمية وتعقيم متطور</span></div></div>
+          <div class="about-feature"><div class="about-feature-icon">🎓</div><div><strong>تعليم مستمر</strong><span>دورات ومؤتمرات سنوية</span></div></div>
+          <div class="about-feature"><div class="about-feature-icon">💬</div><div><strong>متابعة شخصية</strong><span>نفس الدكتور يتابع حالتك</span></div></div>
+          <div class="about-feature"><div class="about-feature-icon">🕐</div><div><strong>مواعيد مرنة</strong><span>صباحي ومسائي — حتى الجمعة</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="section-label">آراء المرضى</div>
+        <h2 class="section-title">اللي جربوا بيقولوا إيه</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="rating"><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg></div>
+          <blockquote>أول مرة أروح دكتور أسنان وأطلع مرتاح. الدكتور شرحلي كل حاجة قبل ما يبدأ، وفعلاً محسيتش بأي ألم. أنصح بيه جداً.</blockquote>
+          <div class="testimonial-author"><div class="testimonial-avatar">أ</div><div><strong>أحمد محمود</strong><span>حشو تجميلي</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="rating"><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg></div>
+          <blockquote> وديت بنتي وكنت خايفة تعيط — بس الدكتور تعامله مع الأطفال ممتاز بجد      .</blockquote>
+          <div class="testimonial-author"><div class="testimonial-avatar">س</div><div><strong>سارة علي</strong><span>أسنان أطفال</span></div></div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="rating"><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-filled"><use href="#star"/></svg><svg class="star-empty"><use href="#star"/></svg></div>
+          <blockquote>عملت تركيبة عنده وشكلها طبيعي جداً. الأسعار معقولة مقارنة بأماكن تانية كتير. المكان نضيف ومنظم.</blockquote>
+          <div class="testimonial-author"><div class="testimonial-avatar">م</div><div><strong>محمد إبراهيم</strong><span>تركيبات ثابتة</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------COURASEL------------------------------------------>
+<!-- ===== قسم قبل وبعد ===== -->
+<section class="ba-section" id="before-after">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">نتائجنا</span>
+      <h2>قبل وبعد</h2>
+      <p>حالات حقيقية من العيادة — اسحب الخط في منتصف الصورة لترى الفرق بنفسك.</p>
+    </div>
+
+    <div class="ba-carousel reveal">
+      <!-- الشريحة -->
+      <div class="ba-track" id="baTrack">
+
+        <!-- شريحة ١ -->
+        <div class="ba-slide active">
+          <div class="ba-compare" data-pos="50">
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1200" alt="قبل العلاج">
+            <div class="ba-after-wrap">
+              <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1200" alt="بعد العلاج">
+            </div>
+            <div class="ba-handle" aria-label="اسحب للمقارنة">
+              <span class="ba-arrow right">‹</span>
+              <span class="ba-arrow left">›</span>
+            </div>
+            <span class="ba-label ba-label-before">قبل</span>
+            <span class="ba-label ba-label-after">بعد</span>
+          </div>
+          <div class="ba-info">
+
+
+          </div>
+        </div>
+
+        <!-- شريحة ٢ -->
+        <div class="ba-slide">
+          <div class="ba-compare" data-pos="50">
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200" alt="قبل العلاج">
+            <div class="ba-after-wrap">
+              <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1581585504291-9197765ffa17?w=1200" alt="بعد العلاج">
+            </div>
+            <div class="ba-handle">
+              <span class="ba-arrow right">‹</span>
+              <span class="ba-arrow left">›</span>
+            </div>
+            <span class="ba-label ba-label-before">قبل</span>
+            <span class="ba-label ba-label-after">بعد</span>
+          </div>
+          <div class="ba-info">
+          </div>
+        </div>
+
+        <!-- شريحة ٣ -->
+        <div class="ba-slide">
+          <div class="ba-compare" data-pos="50">
+            <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=1200" alt="قبل العلاج">
+            <div class="ba-after-wrap">
+              <img class="ba-img ba-after" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200" alt="بعد العلاج">
+            </div>
+            <div class="ba-handle">
+              <span class="ba-arrow right">‹</span>
+              <span class="ba-arrow left">›</span>
+            </div>
+            <span class="ba-label ba-label-before">قبل</span>
+            <span class="ba-label ba-label-after">بعد</span>
+          </div>
+          <div class="ba-info">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- أزرار التنقل -->
+      <button class="ba-nav ba-prev" id="baPrev" aria-label="السابق">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <button class="ba-nav ba-next" id="baNext" aria-label="التالي">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <!-- النقاط -->
+      <div class="ba-dots" id="baDots">
+        <button class="ba-dot active" data-slide="0" aria-label="الحالة الأولى"></button>
+        <button class="ba-dot" data-slide="1" aria-label="الحالة الثانية"></button>
+        <button class="ba-dot" data-slide="2" aria-label="الحالة الثالثة"></button>
+      </div>
+    </div>
+
+    <p class="ba-disclaimer reveal">
+      * كل الصور بإذن المرضى. النتائج تختلف من حالة لأخرى.
+    </p>
+  </div>
+</section>
+
+
+  <!-------------------------------------------------------------------------------->
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="section-label">احجز الآن</div>
+        <h2 class="section-title">جاهز تبدأ رحلة ابتسامتك؟</h2>
+        <p class="section-desc">كلمنا على الواتساب أو اتصل بينا — والموعد علينا.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/201149956411" target="_blank" class="btn-primary">💬 واتساب</a>
+          <a href="tel:+201149956411" class="btn-outline-cta">📞 اتصل بينا</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Booking Section -->
+<section class="booking-section" id="booking">
+  <div class="container">
+    <h2>احجز موعدك</h2>
+    <p>املأ البيانات وسنتواصل معك قريباً.</p>
+
+    <form id="form" class="booking-form">
+      <input type="text" name="name" placeholder="الاسم" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+<select name="day" required>
+  <option value="">اختر اليوم المفضّل</option>
+  <option value="السبت">السبت</option>
+  <option value="الأحد">الأحد</option>
+  <option value="الاثنين">الاثنين</option>
+  <option value="الثلاثاء">الثلاثاء</option>
+  <option value="الأربعاء">الأربعاء</option>
+  <option value="الخميس">الخميس</option>
+</select>      <textarea name="message" placeholder="ملاحظات (اختياري)" rows="4"></textarea>
+  <div id="formMessage" class="form-message"></div>
+      <button type="submit">إرسال الحجز</button>
+    </form>
+  </div>
+</section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <i class="fa-solid fa-tooth"></i>
+            <div class="logo-text-wrap"><span class="logo-name">إمام</span><span class="logo-sub">عيادة أسنان</span></div>
+          </a>
+          <p>عيادة متخصصة في طب وتجميل الأسنان. ابتسامتك أمانة عندنا.</p>
+        </div>
+        <div class="footer-col">
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="#" class="footer-not-cursor">كشف وتنظيف</a></li>
+            <li><a href="#" class="footer-not-cursor">تبييض أسنان</a></li>
+            <li><a href="#" class="footer-not-cursor">حشوات تجميلية</a></li>
+            <li><a href="#" class="footer-not-cursor">تركيبات وتيجان</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>العيادة</h4>
+          <ul>
+            <li><a href="#about">عن الدكتور</a></li>
+            <li><a href="#gallery">معرض الصور</a></li>
+            <li><a href="#testimonials">آراء المرضى</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li><a href="#"> الشرقية ، كفر صقر</a></li>
+            <li><a href="tel:+201149956411">01149956411</a></li>
+          <li><a href="tel:+2001008999896">01008999896</a></li>
+
+            <li><a href="#">السبت–الخميس: ١٠ص – ١٠م</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© ٢٠٢٦ عيادة إمام للأسنان. جميع الحقوق محفوظة.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="فيسبوك"><svg><use href="#icon-fb"/></svg></a>
+          <a href="#" aria-label="انستجرام"><svg><use href="#icon-ig"/></svg></a>
+          <a href="#" aria-label="واتساب"><svg><use href="#icon-wa"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="أعلى الصفحة">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
